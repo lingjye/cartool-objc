@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74DD9C3A238E7EDD000396D1 /* cartool-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cartool-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DD9C3A238E7EDD000396D1 /* cartool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cartool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DD9C3D238E7EDD000396D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74DD9C3E238E7EDD000396D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74DD9C40238E7EDD000396D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		74DD9C3B238E7EDD000396D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74DD9C3A238E7EDD000396D1 /* cartool-objc.app */,
+				74DD9C3A238E7EDD000396D1 /* cartool.app */,
 				74DD9C50238E7EDF000396D1 /* cartool-objcTests.xctest */,
 				74DD9C5B238E7EDF000396D1 /* cartool-objcUITests.xctest */,
 			);
@@ -171,7 +171,7 @@
 			);
 			name = "cartool-objc";
 			productName = "cartool-objc";
-			productReference = 74DD9C3A238E7EDD000396D1 /* cartool-objc.app */;
+			productReference = 74DD9C3A238E7EDD000396D1 /* cartool.app */;
 			productType = "com.apple.product-type.application";
 		};
 		74DD9C4F238E7EDF000396D1 /* cartool-objcTests */ = {
@@ -459,7 +459,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lingjye.app.cartool-objc";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cartool;
 			};
 			name = Debug;
 		};
@@ -476,7 +476,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lingjye.app.cartool-objc";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cartool;
 			};
 			name = Release;
 		};

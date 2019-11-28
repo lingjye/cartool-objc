@@ -161,14 +161,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pqs-eP-pK6">
-                                <rect key="frame" x="177" y="52" width="127" height="22"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="选择car文件" id="eOf-Hx-fBR">
-                                    <font key="font" size="22" name=".PingFangSC-Regular"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kpy-xM-M8v">
                                 <rect key="frame" x="153" y="76" width="174" height="161"/>
                                 <constraints>
@@ -177,12 +169,30 @@
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="openfile" id="rlU-e1-tLU"/>
                             </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pqs-eP-pK6">
+                                <rect key="frame" x="177" y="52" width="127" height="22"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="选择car文件" id="eOf-Hx-fBR">
+                                    <font key="font" size="22" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2JU-mb-00X">
+                                <rect key="frame" x="153" y="7" width="174" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="默认解压路径为.car当前路径" id="Cir-nu-2Wt">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="2JU-mb-00X" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="ALh-3V-YaV"/>
                             <constraint firstItem="pqs-eP-pK6" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="DtV-Df-Z01"/>
                             <constraint firstItem="kpy-xM-M8v" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="FnE-04-f58"/>
                             <constraint firstItem="pqs-eP-pK6" firstAttribute="top" secondItem="kpy-xM-M8v" secondAttribute="bottom" constant="2" id="JRb-mi-jWL"/>
                             <constraint firstItem="kpy-xM-M8v" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-21.5" id="Xne-xV-faw"/>
+                            <constraint firstAttribute="bottom" secondItem="2JU-mb-00X" secondAttribute="bottom" constant="7" id="vDq-GH-XvR"/>
                         </constraints>
                     </view>
                 </viewController>

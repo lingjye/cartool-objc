@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CARView.h"
 
 @interface ViewController : NSViewController
 
+@property (nonatomic, strong) CARView *dragView;
+
+- (void)executeCartoolWithFilePath:(NSString *)filePath;
 
 @end
 

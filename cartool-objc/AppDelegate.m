@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,11 @@
     // Insert code here to initialize your application
 }
 
+- (IBAction)openFile:(id)sender {
+    ViewController *vc = (ViewController *)[NSApplication sharedApplication].keyWindow.contentViewController;
+    [vc executeCartoolWithFilePath:@""];
+    [vc.dragView openFile];
+}
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application

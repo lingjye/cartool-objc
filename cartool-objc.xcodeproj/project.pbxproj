@@ -14,6 +14,11 @@
 		74DD9C4A238E7EDF000396D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C49238E7EDF000396D1 /* main.m */; };
 		74DD9C55238E7EDF000396D1 /* cartool_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C54238E7EDF000396D1 /* cartool_objcTests.m */; };
 		74DD9C60238E7EDF000396D1 /* cartool_objcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C5F238E7EDF000396D1 /* cartool_objcUITests.m */; };
+		74DD9C72238E7F4A000396D1 /* CARShell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C71238E7F4A000396D1 /* CARShell.m */; };
+		74DD9C75238E7F54000396D1 /* CARWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C74238E7F54000396D1 /* CARWindow.m */; };
+		74DD9C7E238E7FC9000396D1 /* NSView+CARAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C7D238E7FC9000396D1 /* NSView+CARAdd.m */; };
+		74DD9C81238E8543000396D1 /* CARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DD9C80238E8543000396D1 /* CARView.m */; };
+		74DD9C83238F7115000396D1 /* cartool in Resources */ = {isa = PBXBuildFile; fileRef = 74DD9C82238F7115000396D1 /* cartool */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,15 @@
 		74DD9C5B238E7EDF000396D1 /* cartool-objcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cartool-objcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DD9C5F238E7EDF000396D1 /* cartool_objcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cartool_objcUITests.m; sourceTree = "<group>"; };
 		74DD9C61238E7EDF000396D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DD9C70238E7F4A000396D1 /* CARShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CARShell.h; sourceTree = "<group>"; };
+		74DD9C71238E7F4A000396D1 /* CARShell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CARShell.m; sourceTree = "<group>"; };
+		74DD9C73238E7F54000396D1 /* CARWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CARWindow.h; sourceTree = "<group>"; };
+		74DD9C74238E7F54000396D1 /* CARWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CARWindow.m; sourceTree = "<group>"; };
+		74DD9C7C238E7FC9000396D1 /* NSView+CARAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+CARAdd.h"; sourceTree = "<group>"; };
+		74DD9C7D238E7FC9000396D1 /* NSView+CARAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+CARAdd.m"; sourceTree = "<group>"; };
+		74DD9C7F238E8543000396D1 /* CARView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CARView.h; sourceTree = "<group>"; };
+		74DD9C80238E8543000396D1 /* CARView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CARView.m; sourceTree = "<group>"; };
+		74DD9C82238F7115000396D1 /* cartool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cartool; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +114,19 @@
 		74DD9C3C238E7EDD000396D1 /* cartool-objc */ = {
 			isa = PBXGroup;
 			children = (
+				74DD9C82238F7115000396D1 /* cartool */,
 				74DD9C3D238E7EDD000396D1 /* AppDelegate.h */,
 				74DD9C3E238E7EDD000396D1 /* AppDelegate.m */,
 				74DD9C40238E7EDD000396D1 /* ViewController.h */,
 				74DD9C41238E7EDD000396D1 /* ViewController.m */,
+				74DD9C70238E7F4A000396D1 /* CARShell.h */,
+				74DD9C71238E7F4A000396D1 /* CARShell.m */,
+				74DD9C73238E7F54000396D1 /* CARWindow.h */,
+				74DD9C74238E7F54000396D1 /* CARWindow.m */,
+				74DD9C7F238E8543000396D1 /* CARView.h */,
+				74DD9C80238E8543000396D1 /* CARView.m */,
+				74DD9C7C238E7FC9000396D1 /* NSView+CARAdd.h */,
+				74DD9C7D238E7FC9000396D1 /* NSView+CARAdd.m */,
 				74DD9C43238E7EDF000396D1 /* Assets.xcassets */,
 				74DD9C45238E7EDF000396D1 /* Main.storyboard */,
 				74DD9C48238E7EDF000396D1 /* Info.plist */,
@@ -234,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DD9C83238F7115000396D1 /* cartool in Resources */,
 				74DD9C44238E7EDF000396D1 /* Assets.xcassets in Resources */,
 				74DD9C47238E7EDF000396D1 /* Main.storyboard in Resources */,
 			);
@@ -260,7 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DD9C7E238E7FC9000396D1 /* NSView+CARAdd.m in Sources */,
+				74DD9C75238E7F54000396D1 /* CARWindow.m in Sources */,
 				74DD9C42238E7EDD000396D1 /* ViewController.m in Sources */,
+				74DD9C72238E7F4A000396D1 /* CARShell.m in Sources */,
+				74DD9C81238E8543000396D1 /* CARView.m in Sources */,
 				74DD9C4A238E7EDF000396D1 /* main.m in Sources */,
 				74DD9C3F238E7EDD000396D1 /* AppDelegate.m in Sources */,
 			);

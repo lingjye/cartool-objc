@@ -1,2 +1,2 @@
 # cartool-objc
-car资源解压
+iOS ipa文件中的Assets.car资源解压
